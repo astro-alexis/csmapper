@@ -43,6 +43,28 @@
 			<div class="panel">
 				<h2>
 					SCIENCE FILTER
+					<hr/>
+					<img src="logo/abund.svg" width="90px">
+					<img src="logo/astrm.svg" width="90px">
+					<img src="logo/atmos.svg" width="90px">
+					<img src="logo/atom.svg" width="90px">
+					<img src="logo/bd.svg" width="90px">
+					<img src="logo/disk.svg" width="90px">
+					<img src="logo/instr.svg" width="90px">
+					<img src="logo/inter.svg" width="90px">
+					<img src="logo/interf.svg" width="90px">
+					<img src="logo/mag.svg" width="90px">
+					<img src="logo/obs.svg" width="90px">
+					<img src="logo/param.svg" width="90px">
+					<img src="logo/photm.svg" width="90px">
+					<img src="logo/pla.svg" width="90px">
+					<img src="logo/seism.svg" width="90px">
+					<img src="logo/simu.svg" width="90px">
+					<img src="logo/spect.svg" width="90px">
+					<img src="logo/star.svg" width="90px">
+					<img src="logo/sun.svg" width="90px">
+					<img src="logo/wind.svg" width="90px">
+
 				</h2>
 			</div>
 		</div>
@@ -53,38 +75,7 @@
 			<script src="http://d3js.org/topojson.v1.min.js"></script>
 			<script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
 			<div id="container" position="relative" style="width: 900px; height: 600px;"></div>
-			<script>
-			var basic_choropleth = new Datamap({
-  		element: document.getElementById("basic_choropleth"),
-  	projection: 'mercator',
-  	fills: {
-    	defaultFill: "#ABDDA4",
-    	authorHasTraveledTo: "#fa0fa0"
-  },
-  data: {
-    USA: { fillKey: "authorHasTraveledTo" },
-    JPN: { fillKey: "authorHasTraveledTo" },
-    ITA: { fillKey: "authorHasTraveledTo" },
-    CRI: { fillKey: "authorHasTraveledTo" },
-    KOR: { fillKey: "authorHasTraveledTo" },
-    DEU: { fillKey: "authorHasTraveledTo" },
-  }
-});
 
-var colors = d3.scale.category10();
-
-window.setInterval(function() {
-  basic_choropleth.updateChoropleth({
-    USA: colors(Math.random() * 10),
-    RUS: colors(Math.random() * 100),
-    AUS: { fillKey: 'authorHasTraveledTo' },
-    BRA: colors(Math.random() * 50),
-    CAN: colors(Math.random() * 50),
-    ZAF: colors(Math.random() * 50),
-    IND: colors(Math.random() * 50),
-  });
-}, 2000);
-			</script>
 		</div>
 	</div>
 	<div class="row">
