@@ -10,6 +10,10 @@
 	}
 }
 
+.datamap {
+	border-width: 30px!important;
+	border-color: #555;
+}
 .map-bg {
 	background-color: #ddd !important;
 }
